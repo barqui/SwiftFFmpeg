@@ -1,6 +1,6 @@
 #ifndef AVDEVICE_SHIM_H
 #define AVDEVICE_SHIM_H
 
-#include <avdevice/avdevice.h>
+#include <libavdevice/avdevice.h>
 
 #endif /* AVDEVICE_SHIM_H */

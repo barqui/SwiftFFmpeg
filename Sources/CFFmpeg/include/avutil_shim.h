@@ -3,18 +3,18 @@
 
 #include <errno.h>
 #include <stddef.h>
-#include <avutil/avutil.h>
-#include <avutil/common.h>
-#include <avutil/error.h>
-#include <avutil/opt.h>
-#include <avutil/file.h>
-#include <avutil/log.h>
-#include <avutil/timestamp.h>
-#include <avutil/pixdesc.h>
-#include <avutil/imgutils.h>
-#include <avutil/channel_layout.h>
-#include <avutil/md5.h>
-#include <avutil/mastering_display_metadata.h>
+#include <libavutil/avutil.h>
+#include <libavutil/common.h>
+#include <libavutil/error.h>
+#include <libavutil/opt.h>
+#include <libavutil/file.h>
+#include <libavutil/log.h>
+#include <libavutil/timestamp.h>
+#include <libavutil/pixdesc.h>
+#include <libavutil/imgutils.h>
+#include <libavutil/channel_layout.h>
+#include <libavutil/md5.h>
+#include <libavutil/mastering_display_metadata.h>
 
 static const int64_t swift_AV_NOPTS_VALUE = AV_NOPTS_VALUE;
 
