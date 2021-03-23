@@ -1,8 +1,8 @@
 #ifndef AVFILTER_SHIM_H
 #define AVFILTER_SHIM_H
 
-#include <libavfilter/avfilter.h>
-#include <libavfilter/buffersink.h>
-#include <libavfilter/buffersrc.h>
+#include <avfilter/avfilter.h>
+#include <avfilter/buffersink.h>
+#include <avfilter/buffersrc.h>
 
 #endif /* AVFILTER_SHIM_H */

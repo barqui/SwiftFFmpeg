@@ -1,7 +1,7 @@
 #ifndef AVFORMAT_SHIM_H
 #define AVFORMAT_SHIM_H
 
-#include <libavformat/avformat.h>
-#include <libavformat/avio.h>
+#include <avformat/avformat.h>
+#include <avformat/avio.h>
 
 #endif /* AVFORMAT_SHIM_H */
