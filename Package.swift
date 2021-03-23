@@ -39,7 +39,6 @@ let package = Package(
         .linkedFramework("AudioToolbox"),
         .linkedFramework("VideoToolbox"),
         .linkedFramework("CoreImage"),
-        .linkedFramework("AppKit"),
       ]
     ),
     .binaryTarget(
