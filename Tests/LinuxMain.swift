@@ -1,6 +1,7 @@
-import SwiftFFmpegTests
 import XCTest
 
+import FFmpegLibraryTests
+
 var tests = [XCTestCaseEntry]()
-tests += SwiftFFmpegTests.allTests()
+tests += FFmpegLibraryTests.allTests()
 XCTMain(tests)
