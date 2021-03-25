@@ -49,31 +49,31 @@ let package = Package(
     ),
     .binaryTarget(
       name: "avcodec",
-      path: "./xcframework/libavcodec.framework"
+      path: "./xcframework/libavcodec.xcframework"
     ),
     .binaryTarget(
       name: "avdevice",
-      path: "./xcframework/libavdevice.framework"
+      path: "./xcframework/libavdevice.xcframework"
     ),
     .binaryTarget(
       name: "avfilter",
-      path: "./xcframework/libavfilter.framework"
+      path: "./xcframework/libavfilter.xcframework"
     ),
     .binaryTarget(
       name: "avformat",
-      path: "./xcframework/libavformat.framework"
+      path: "./xcframework/libavformat.xcframework"
     ),
     .binaryTarget(
       name: "avutil",
-      path: "./xcframework/libavutil.framework"
+      path: "./xcframework/libavutil.xcframework"
     ),
     .binaryTarget(
       name: "swresample",
-      path: "./xcframework/libswresample.framework"
+      path: "./xcframework/libswresample.xcframework"
     ),
     .binaryTarget(
       name: "swscale",
-      path: "./xcframework/libswscale.framework"
+      path: "./xcframework/libswscale.xcframework"
     ),
   ]
 )
