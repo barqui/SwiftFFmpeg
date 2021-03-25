@@ -49,31 +49,31 @@ let package = Package(
     ),
     .binaryTarget(
       name: "avcodec",
-      path: "./xcframework/libavcodec.xcframework"
+      path: "./xcodeframework/avcodec.xcframework"
     ),
     .binaryTarget(
       name: "avdevice",
-      path: "./xcframework/libavdevice.xcframework"
+      path: "./xcodeframework/avdevice.xcframework"
     ),
     .binaryTarget(
       name: "avfilter",
-      path: "./xcframework/libavfilter.xcframework"
+      path: "./xcodeframework/avfilter.xcframework"
     ),
     .binaryTarget(
       name: "avformat",
-      path: "./xcframework/libavformat.xcframework"
+      path: "./xcodeframework/avformat.xcframework"
     ),
     .binaryTarget(
       name: "avutil",
-      path: "./xcframework/libavutil.xcframework"
+      path: "./xcodeframework/avutil.xcframework"
     ),
     .binaryTarget(
       name: "swresample",
-      path: "./xcframework/libswresample.xcframework"
+      path: "./xcodeframework/swresample.xcframework"
     ),
     .binaryTarget(
       name: "swscale",
-      path: "./xcframework/libswscale.xcframework"
+      path: "./xcodeframework/swscale.xcframework"
     ),
   ]
 )
