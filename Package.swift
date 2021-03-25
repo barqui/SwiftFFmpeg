@@ -4,13 +4,19 @@
 import PackageDescription
 
 let package = Package(
-  name: "SwiftFFmpeg",
-  platforms: [.iOS(.v9), .macOS(.v10_10), .tvOS(.v10)],
+  name: "FFmpegLibrary",
+  platforms: [
+    .iOS(.v13)
+  ],
   products: [
     .library(
       name: "SwiftFFmpeg",
-      targets: ["SwiftFFmpeg"]
-    )
+      targets: ["SwiftFFmpeg"]),
+    .library(
+      name: "CFFmpeg",
+      targets: ["CFFmpeg"]),
+  ],
+  dependencies: [
   ],
   targets: [
     .target(
@@ -38,57 +44,36 @@ let package = Package(
         .linkedFramework("CoreVideo"),
         .linkedFramework("AudioToolbox"),
         .linkedFramework("VideoToolbox"),
-        .linkedFramework("OpenGL"),
         .linkedFramework("CoreImage"),
-        .linkedFramework("AppKit"),
       ]
     ),
     .binaryTarget(
       name: "avcodec",
-      url: "https://github.com/barqui/SwiftFFmpeg/blob/master/xcframework/avcodec.zip?raw=true",
-      checksum: "6a1af9fda24dbc5bd70a40751c3c14a735158e2fbc819e77c4be6365290e187f"
+      path: "./Binary/avcodec.xcframework"
     ),
     .binaryTarget(
       name: "avdevice",
-      url:
-        "https://github.com/barqui/SwiftFFmpeg/blob/master/xcframework/avdevice.zip?raw=true",
-      checksum: "bbe7b60598bc042cbbb4175e6b9094d38b45ff0112944f9382e2c195c8b45668"
+      path: "./Binary/avdevice.xcframework"
     ),
     .binaryTarget(
       name: "avfilter",
-      url:
-        "https://github.com/barqui/SwiftFFmpeg/blob/master/xcframework/avfilter.zip?raw=true",
-      checksum: "024ea1fd7bde742976ef622ca9929348a0995e675156b5bf55b02047c4a1c278"
+      path: "./Binary/avfilter.xcframework"
     ),
     .binaryTarget(
       name: "avformat",
-      url:
-        "https://github.com/barqui/SwiftFFmpeg/blob/master/xcframework/avformat.zip?raw=true",
-      checksum: "ce9e702af7d69edca0e75d981917ca8f12b5aeff8b309cb5261ecf295c528043"
+      path: "./Binary/avformat.xcframework"
     ),
     .binaryTarget(
       name: "avutil",
-      url: "https://github.com/barqui/SwiftFFmpeg/blob/master/xcframework/avutil.zip?raw=true",
-      checksum: "86802134cb419806728445da5c09688361c22269d89274832f01d62687ae1ca2"
+      path: "./Binary/avutil.xcframework"
     ),
     .binaryTarget(
       name: "swresample",
-      url:
-        "https://github.com/barqui/SwiftFFmpeg/blob/master/xcframework/swresample.zip?raw=true",
-      checksum: "e69b84deab30aabf4c94122c03aef1e3281178922423129a0b1e21ee9d6804a0"
+      path: "./Binary/swresample.xcframework"
     ),
     .binaryTarget(
       name: "swscale",
-      url: "https://github.com/barqui/SwiftFFmpeg/blob/master/xcframework/swscale.zip?raw=true",
-      checksum: "87f1f7627c558201ee9879bb709d12c0bfe929d29de26e27d0b92acca688d125"
-    ),
-    .target(
-      name: "SwiftFFmpegExamples",
-      dependencies: ["SwiftFFmpeg"]
-    ),
-    .testTarget(
-      name: "SwiftFFmpegTests",
-      dependencies: ["SwiftFFmpeg"]
+      path: "./Binary/swscale.xcframework"
     ),
   ]
 )
