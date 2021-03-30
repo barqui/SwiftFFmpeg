@@ -13,11 +13,10 @@ let package = Package(
       name: "SwiftFFmpeg",
       type: .dynamic,
       targets: ["SwiftFFmpeg"]),
-//    .library(
-//      name: "CFFmpeg",
-//      type: .dynamic,
-//      targets: ["CFFmpeg"]),
-    
+    .library(
+      name: "CFFmpeg",
+      type: .static,
+      targets: ["CFFmpeg"]),
   ],
   dependencies: [
   ],
@@ -37,11 +36,14 @@ let package = Package(
         "swresample",
         "swscale",
       ],
-//      path: "" ,
-      exclude: [
-        "xcframework",
-        "Supporting Files/Info.plist",
-      ],
+//      path: "Sources",
+//      exclude: [
+//          "Frameworks",
+//          "Supporting Files/Info.plist",
+//      ],
+//      cSettings: [
+//          .headerSearchPath("Frameworks/**"),
+//      ],
       linkerSettings: [
         .linkedLibrary("z"),
         .linkedLibrary("bz2"),
