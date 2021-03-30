@@ -39,7 +39,7 @@ let package = Package(
         .linkedLibrary("bz2"),
         .linkedLibrary("iconv"),
         .linkedLibrary("lzma"),
-        .linkedFramework("FFmpeg")
+        .linkedFramework("FFmpeg"),
         .linkedFramework("Security"),
         .linkedFramework("CoreMedia"),
         .linkedFramework("CoreVideo"),
